@@ -1,0 +1,58 @@
+div {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  height: 8%;
+}
+
+form {
+  background-color: green;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 40%;
+  width: 100%;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  max-width: 200px;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  max-width: 200px;
+}
+
+.imageBox {
+  width: 100%; 
+  height: 52%; 
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imageBox img {
+  max-width: 100%;
+  max-height: 90%;
+  border-radius: 25px;
+}

@@ -1,0 +1,97 @@
+.content-container {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: pink;
+}
+
+.content-container2{
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: pink;
+    flex-direction: column;
+}
+
+.content-container2 form{
+    margin: 0;
+    padding: 0;
+    height: 3%;
+    width: 40%;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items:stretch;
+    text-align: center;
+}
+
+.content-container2 form label{
+    width: 40%;
+}
+
+.content-container2 form button{
+    width: auto;
+    background-color: darkseagreen;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar h1 {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+
+.map-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: red;
+}
+
+.form-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+app-map-view {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 90%;
+    background-color: orange;
+}
+
+app-user-form {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 100%;
+}

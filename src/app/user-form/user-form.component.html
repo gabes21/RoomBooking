@@ -1,0 +1,21 @@
+<div>
+    @if (message) {
+        <h1 >Room {{ message }}</h1>
+        <div class="imageBox">
+        <img [src]="imgUrl[message-1]" alt="Room Picture">
+        </div>
+        <form [formGroup]="userForm" (ngSubmit)="postdata(userForm)" >
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" formControlName="fname"/>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" formControlName="lname"/>
+        <label for="phoneno">Phone Number:</label>
+        <input type="text" id="phoneno" name="phoneno" formControlName="phoneno"/>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" formControlName="email"/>
+        <div></div>
+        <button type="submit" [disabled]="!userForm.valid">Submit</button>
+        </form>
+    }
+    @else { <h1> Please select a room from the map! </h1>}
+  </div>

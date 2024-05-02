@@ -1,0 +1,21 @@
+<div id="navbar"><h1>Room Booking System</h1></div>
+@if (showMap != false) {
+    <div class="content-container">
+        <div class="map-container">
+            <app-map-view [FilteredRoom]="this.filterResult"></app-map-view>
+        </div>
+        <div class="form-container">
+            <app-user-form [StartDate]="this.startDate" [EndDate]="this.endDate" (NewShowMap)="NotShowMap($event)"></app-user-form>
+        </div>
+    </div>
+} 
+@else {
+    <div class="content-container2">
+        <h3>Select the date for your booking: </h3>
+        <form [formGroup]="userFormFilter" (ngSubmit)="filterRoom(userFormFilter)">
+            <label for="sdate">Start Date: <input type="date" id="sdate" name="sdate" formControlName="sdate"/></label>
+            <label for="edate">End Date: <input type="date" id="edate" name="edate" formControlName="edate"/></label>
+            <button type="submit" [disabled]="!userFormFilter.valid">Search</button>
+        </form>
+    </div>
+}
