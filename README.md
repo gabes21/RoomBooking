@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
-Its a website that allow for the booking of room based on availability during the chosen date with a litle interactive map on display.
+Its a website that allow for the booking of room based on availability during the chosen date with a little interactive map on display.
 
 ## Development server
 
